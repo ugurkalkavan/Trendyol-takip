@@ -21,7 +21,7 @@ image = htmlPage.find("img" , class_ = "base-product-image")
 convertedPrice = float(price.replace(",", ".").replace(" TL", ""))
 
 if(convertedPrice <= 150):
-    print("Ürün fiyatı düştü")
+    print("Price drop on the product")
     htmlEmailContent = """\
     <html>
     <head></head>
