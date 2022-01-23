@@ -4,12 +4,12 @@ from email.mime.text import MIMEText
 
 def sendMail(toMail, subject, content):
 
-    fromMail = "kalkavanugur@gmail.com"
+    fromMail = "your-email"
     server = smtplib.SMTP("smtp.gmail.com",587)
 
     server.ehlo()
     server.starttls()
-    server.login(fromMail, "rpvdiwxfnqjtpjem")
+    server.login(fromMail, "gmail-password")
 
     message = MIMEMultipart('alternative')
     message['Subject']= subject
@@ -22,6 +22,6 @@ def sendMail(toMail, subject, content):
         toMail,
         message.as_string()
     )
-    print("Eposta gönderildi!")
+    print("Eposta sent!")
 
     server.quit()
