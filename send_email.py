@@ -22,6 +22,6 @@ def sendMail(toMail, subject, content):
         toMail,
         message.as_string()
     )
-    print("Eposta sent!")
+    print("Email sent!")
 
     server.quit()

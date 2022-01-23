@@ -34,7 +34,7 @@ if(convertedPrice <= 150):
     </body>
     </html>
     """.format(productTitle, image, url1)
-    sendMail("kalkavanugur@gmail.com","Ürünün Fiatı Düştü",htmlEmailContent)
+    sendMail("your-email","a price drop on the product",htmlEmailContent)
 
 print(productTitle)
 print(price)
