@@ -40,4 +40,5 @@ print(productTitle)
 print(price)
 print(convertedPrice)
 print(image)
+
 print(test)
